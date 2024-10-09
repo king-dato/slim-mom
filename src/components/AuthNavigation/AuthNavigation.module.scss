@@ -1,0 +1,36 @@
+@use "../_styles/colors";
+@use "../_styles/mixins" as mixins;
+
+.nav{
+  @include mixins.mediaquery('desktop', min)
+     {
+        border-left: var(--text-normal) solid 2px;
+      }
+  
+}
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 0px 8px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-contrast);
+}
+
+.active {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 0px 8px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-normal);
+}
+
+.active:hover,
+.link:hover {
+  color: var(--accent-main);
+}

@@ -1,0 +1,39 @@
+@use "../_styles/colors";
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  @media screen and (min-width: 1280px) {
+      min-width: 517px;
+      background-color: #f0f1f3;
+      padding: 134px 115px 17px 204px; 
+      margin-top: -80px;
+      margin-bottom: -20px;
+      margin-right: -16px;
+}
+}
+.name {
+  display: inline-block;
+  padding: 8px 10px 8px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: var(--text-contrast);
+}
+
+.button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-left: var(--text-normal) solid 2px;
+  padding: 8px 10px 8px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: var(--text-normal);
+}
+
+.button:hover, .button:focus {
+color: var(--accent-main);
+}

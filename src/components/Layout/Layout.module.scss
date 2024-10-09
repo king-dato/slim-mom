@@ -1,0 +1,14 @@
+@use '../_styles/mixins' as mixins;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+
+  @include mixins.mediaquery('tablet', min) {
+    width: 768px;
+  }
+
+  @include mixins.mediaquery('desktop', min) {
+    width: 1280px;
+  }
+}
